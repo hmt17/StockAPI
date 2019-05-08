@@ -1,7 +1,7 @@
 // routes to functions for each call
 'use strict';
 module.exports = function(app) {
-  var stockControllers = require('../controller/stockController');
+  var stockControllers = require('../controllers/stockController');
 
   app.route('/trades')
 	.get(stockControllers.read_trades)
