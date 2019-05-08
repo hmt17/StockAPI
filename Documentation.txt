@@ -1,0 +1,14 @@
+So I decided to use MongoDB to store the trade records because there is a lot of really helpful functionality between NodeJS and Mongo.
+The only issue I found with using Mongo was I couldn't specify the character length of the String types - they are all defaulted to
+255bit, which depending on how large the database gets could waste a significant amount of memory. For this scenario I didn't 
+have to find a work around, but in a real life problem this would need to be validated that the values were the correct size.
+
+I chose to use the express framework, as suggested, and also chose to use Mocha and Chai for the testing framework to make
+building and testing the different API calls much easier. 
+
+Other things I had considered adding was configs for two seperate databases - one for dev/stage and one for testing; however, it was 
+unnecessary for this project.
+
+I left out the node-modules folder, I believe it will get built out with the project locally. I believe MongoDB needs to be 
+installed locally in order to get the `npm start` command to run. I used this version if there are any issues starting the
+application: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
